@@ -2,4 +2,5 @@ This lab can be perfomed using multiple environments, choose the environment in 
 
 - [Visual Studio](./visual-studio/README.md)
 - [PyCharm](./pycharm/README.md)
+- [Jupyter](./jupyter/README.md)
 - [Azure Databricks](./databricks/README.md)
