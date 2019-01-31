@@ -9,11 +9,12 @@ The labs have the following requirements:
 - One of the following environments:
     - Visual Studio 2017 and the Visual Studio Tools for AI 
     - PyCharm
+    - Jupyter Notebooks
     - Azure Databricks Workspace
 - For the deep learning lab, you will need a VM or cluster with CPU capabilities.
 
 Depending on which environment you use, there are different requirements. These are summarized as follows:
-- Visual Studio 2017 and PyCharm
+- Visual Studio 2017, PyCharm, Jupyter Notebooks
     - A Python 3.x Anaconda environment named `azureml` with:
         - The latest version of the Azure Machine Learning Python SDK installed. Use `pip install --upgrade azureml-sdk[notebooks,automl] azureml-dataprep` to install the latest version.
         - The following pip installable packages:
@@ -26,12 +27,12 @@ Depending on which environment you use, there are different requirements. These 
 
 The following sections describe the setup process for each environment.
 
-# Quickstart: Visual Studio 2017 and PyCharm
+# Quickstart: Visual Studio 2017, PyCharm, Jupyter
 The quickest way to get going with the labs is to deploy the Deep Learning Virtual Machine (DLVM). 
 
 1. Follow these instructions for [creating an Deep Learning Virtual Machine](https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm). Be sure you do the following:
     - OS Type: Select Windows 2016
-    - Location: Choose a region that provides NC series VM's, such as East US, East US 2, North Central US, South Central US and West US 2. Be sure to visit the [Azure Products by Region](https://azure.microsoft.com/regions/services/) website for the latest.
+    - Location: Choose a region that provides NC series VM's, such as East US, East US 2, North Central US, South Central US, West US 2, West Europe. Be sure to visit the [Azure Products by Region](https://azure.microsoft.com/regions/services/) website for the latest.
     - Virtual Machine size: NC6
 2. Once the VM is ready, download the remote desktop (RDP) file from the Overview blade of your VM in the Azure Portal and login. If you are unfamiliar with this process, see [Connect to a VM](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/connect-logon).
 3. Once you are connected to your DLVM, open the Start Menu and run `Anaconda Prompt`. 
@@ -46,7 +47,8 @@ The quickest way to get going with the labs is to deploy the Deep Learning Virtu
     - `pip install --upgrade azureml-sdk[notebooks,automl] azureml-dataprep`
 7. If you will be using Visual Studio for the labs, launch `Visual Studio 2017` from the Start menu and login with your Microsoft Account. Allow Visual Studio a few moments to get ready. Once you see the Tools for AI Start Page displayed in Visual Studio, the setup is complete.
 8. If you will be using PyCharm for the labs, launch `JetBrains PyCharm Community Edition` from the Start menu. On the Complete Installation dialog, leave `Do not import settings` selected, accept the license agreement and choose an option for Data Sharing. On the Customize PyCharm screen, select `Skip Remaining and Set Defaults`. Once you are at the Welcome to PyCharm new project dialog the setup is complete.
-9. Your Virtual Machine is now ready to support any of the labs using either the Visual Studio or PyCharm environments.     
+9. If you will be using Jupyter notebooks for the labs, type  `jupyter notebook` from the terminal you activated the azureml enviroment. A browser session will pop up showing your main notebook directory. Locate  the directoy you downloaded the notebooks  and open one of them. The setup is complete.
+10. Your Virtual Machine is now ready to support any of the labs using either the Visual Studio or PyCharm environments.     
 
 
 # Quickstart: Azure Databricks
